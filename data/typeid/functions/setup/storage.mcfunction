@@ -46,4 +46,4 @@ data modify storage typeid:types TypeList append from storage typeid:types LongA
 data modify storage typeid:iterator Iterable set value []
 
 # The typeid:cache storage is used as a cache for the TypeList.
-execute unless data typeid:cache Entry.List run data modify storage typeid:cache Entry set from storage typeid:types String
+execute unless data storage typeid:cache Entry.List run data modify storage typeid:cache Entry set from storage typeid:types String
